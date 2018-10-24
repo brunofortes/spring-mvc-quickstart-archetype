@@ -11,8 +11,7 @@ Generated project characteristics
 * Thymeleaf, Bootstrap
 * JPA (Hibernate/HSQLDB/Spring Data JPA)
 * JUnit/Mockito
-* Spring Security
-* MongoDB (Spring Data Mongo)
+* PostgreSQL
 
 Prerequisites
 -------------

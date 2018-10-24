@@ -1,7 +1,5 @@
 package ${package}.home;
 
-import java.security.Principal;
-
 import org.springframework.core.SpringVersion;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,8 +15,8 @@ class HomeController {
 	}
 
 	@GetMapping("/")
-	String index(Principal principal, Model model) {
+	String index(Model model) {
 		model.addAttribute("springVersion", SpringVersion.getVersion());
-		return principal != null ? "home/homeSignedIn" : "home/homeNotSignedIn";
+		return "home/home";
 	}
 }
