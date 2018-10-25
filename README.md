@@ -30,10 +30,10 @@ Create a project
         -DgroupId=my.groupid \
         -DartifactId=my-artifactId \
         -Dversion=version \
-        -DarchetypeRepository=http://kolorobot.github.io/spring-mvc-quickstart-archetype
+        -DarchetypeRepository=http://github.com/brunofortes/spring-mvc-quickstart-archetype
 ```
 
-Note: The above command will bootstrap a project using the archetype published here: http://kolorobot.github.io/spring-mvc-quickstart-archetype
+Note: The above command will bootstrap a project using the archetype published here: http://github.com/brunofortes/spring-mvc-quickstart-archetype
 
 Run the project
 ----------------
@@ -140,22 +140,4 @@ hibernate.hbm2ddl.auto=create
 hibernate.show_sql=true
 hibernate.format_sql=true
 hibernate.use_sql_comments=true
-```
-
-Enabling MongoDB repositories
------------------------------
-
-* Open MongoConfig class and uncomment the following line:
-
-```
-// @EnableMongoRepositories(basePackageClasses = Application.class)
-```
-
-Now you can add repositories to your project:
-
-```
-@Repository
-public interface MyRepository extends MongoRepository<MyDocument, String> {
-
-}
 ```
