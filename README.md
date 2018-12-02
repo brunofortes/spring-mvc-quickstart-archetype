@@ -123,7 +123,7 @@ Switching to PostgreSQL
 <dependency>
     <groupId>org.postgresql</groupId>
     <artifactId>postgresql</artifactId>
-    <version>9.4.1207</version>
+    <version>9.4.1211</version>
 </dependency>
 ```
 
